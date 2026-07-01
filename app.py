@@ -16,8 +16,8 @@ berdasarkan data aktivitas dan transaksi mereka.
 # Load Model dan Scaler yang sudah disimpan dari Notebook
 @st.cache_resource
 def load_models():
-    model = load(open("models/model_terbaik.pkl", "rb"))
-    scaler = load(open("models/scaler.pkl", "rb"))
+model = load(open("model_terbaik.pkl", "rb"))
+scaler = load(open("scaler.pkl", "rb"))
     return model, scaler
 
 try:
